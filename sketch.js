@@ -108,6 +108,7 @@ function draw() {
   fill("yellow");
   textSize(20);
   text("Space = restart", 50, 50);
+  text("Down arrow = make star fall", 50, 100);
 }
 
 function reset()
