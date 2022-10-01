@@ -62,9 +62,10 @@ function setup() {
 function draw() {
   background("black");
   
+  fairy.x += ((keyDown("right")?1:0) - (keyDown("left")?1:0)) * SPEED;
+  
   if (gameState == PLAY)
   {
-    fairy.x += ((keyDown("right")?1:0) - (keyDown("left")?1:0)) * SPEED;
     visStar.rotation += 5;
     
     if (keyWentDown("down"))
